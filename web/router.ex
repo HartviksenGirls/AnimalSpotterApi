@@ -19,8 +19,9 @@ defmodule AnimalSpotterApi.Router do
     get "/", PageController, :index
   end
 
-  # Other scopes may use custom stacks.
-  # scope "/api", AnimalSpotterApi do
-  #   pipe_through :api
-  # end
+  scope "/api", AnimalSpotterApi do
+    pipe_through :api
+
+    resources "/animals", AnimalController, only: [:index]
+  end
 end

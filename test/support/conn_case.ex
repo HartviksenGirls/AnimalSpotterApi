@@ -26,6 +26,7 @@ defmodule AnimalSpotterApi.ConnCase do
       import Ecto.Query
 
       import AnimalSpotterApi.Router.Helpers
+      import AnimalSpotterApi.Factory
 
       # The default endpoint for testing
       @endpoint AnimalSpotterApi.Endpoint
