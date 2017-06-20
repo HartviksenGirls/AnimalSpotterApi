@@ -22,7 +22,7 @@ defmodule AnimalSpotterApi.Router do
   scope "/api", AnimalSpotterApi do
     pipe_through :api
 
-    resources "/animals", AnimalController, only: [:index]
+    resources "/animals", AnimalController, only: [:index, :show]
     resources "/users", UserController, only: [:index]
   end
 end

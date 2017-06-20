@@ -7,6 +7,10 @@ defmodule AnimalSpotterApi.AnimalView do
     }
   end
 
+  def render("show.json", %{animal: animal}) do
+    %{animal: animal_json(animal)}
+  end
+
   def animal_json(animal) do
     %{
       name: animal.name,
