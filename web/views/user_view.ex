@@ -7,6 +7,10 @@ defmodule AnimalSpotterApi.UserView do
     }
   end
 
+  def render("show.json", %{user: user}) do
+    %{user: user_json(user)}
+  end
+
   def user_json(user) do
     %{
       name: user.name,
