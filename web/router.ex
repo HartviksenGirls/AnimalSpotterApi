@@ -23,5 +23,6 @@ defmodule AnimalSpotterApi.Router do
     pipe_through :api
 
     resources "/animals", AnimalController, only: [:index]
+    resources "/users", UserController, only: [:index]
   end
 end

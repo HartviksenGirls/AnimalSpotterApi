@@ -7,4 +7,12 @@ defmodule AnimalSpotterApi.Factory do
       points: 12
     }
   end
+
+  def user_factory do
+    %AnimalSpotterApi.User{
+      name: "Rachel",
+      points: 123
+    }
+  end
+
 end
