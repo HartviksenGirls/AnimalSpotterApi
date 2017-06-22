@@ -24,5 +24,6 @@ defmodule AnimalSpotterApi.Router do
 
     resources "/animals", AnimalController, only: [:index, :show]
     resources "/users", UserController, only: [:index, :show]
+    resources "/spots", SpotController, only: [:index, :show]
   end
 end

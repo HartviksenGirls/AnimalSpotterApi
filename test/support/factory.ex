@@ -15,4 +15,11 @@ defmodule AnimalSpotterApi.Factory do
     }
   end
 
+  def spot_factory do
+    %AnimalSpotterApi.Spot{
+      user: user_factory,
+      animal: animal_factory
+    }
+  end
+
 end
